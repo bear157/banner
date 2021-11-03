@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .banner-image {
+      display: none;
+      width: 100%;
+    }
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      #banner-sm {
+        display: block;
+      }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      #banner-md {
+        display: block;
+      }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+      #banner-md {
+        display: block;
+      }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+      #banner-md {
+        display: none;
+      }
+
+      #banner-lg {
+        display: block;
+      }
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+      
+    }
+  </style>
+</head>
+<body>
+  <div id="banner">
+    <img class="banner-image" id="banner-sm" src="280x152.jpg" />
+    <img class="banner-image" id="banner-md" src="707x118.jpg" />
+    <img class="banner-image" id="banner-lg" src="880x118.jpg" />
+  </div>
+</body>
+</html>
