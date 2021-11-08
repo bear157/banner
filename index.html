@@ -7,45 +7,40 @@
   <title>Document</title>
 
   <style>
-/*     #banner-wrapper {
-      background: rgb(0,173,177);
-      background: linear-gradient(90deg, rgba(0,173,177,1) 0%, rgba(0,173,177,1) 30%, rgba(12,78,130,1) 75%, rgba(12,78,130,1) 100%);
-    } */
+    .banner-image {
+      display: none;
+      height: 100%;
+    }
+
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
-      #banner-image {
-        height: 152px;
-        background-image: url("280x152.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: auto;
+      #banner-sm {
+        display: block;
       }
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
     @media only screen and (min-width: 600px) {
-      #banner-image {
-        height: 118px;
-        background-image: url("707x118.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: auto;
+      #banner-md {
+        display: block;
       }
     }
 
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) {
-      
+      #banner-md {
+        display: block;
+      }
     }
 
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
-      #banner-image {
-        height: 118px;
-        background-image: url("880x118.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: auto;
+      #banner-md {
+        display: none;
+      }
+
+      #banner-lg {
+        display: block;
       }
     }
 
@@ -56,8 +51,12 @@
   </style>
 </head>
 <body>
-  <div id="banner-wrapper">
-    <a href="https://www.tiq.com.sg/promotion/invest-save-campaign/?utm_source=feefo&utm_medium=banner&utm_campaign=savingsbundlenov2021"><div id="banner-image"></div></a>
-  </div>
+  <center id="banner-wrapper">
+    <a href="https://www.tiq.com.sg/promotion/invest-save-campaign/?utm_source=feefo&utm_medium=banner&utm_campaign=savingsbundlenov2021">
+      <img class="banner-image" id="banner-sm" src="280x152.jpg" />
+      <img class="banner-image" id="banner-md" src="707x118.jpg" />
+      <img class="banner-image" id="banner-lg" src="880x118.jpg" />
+    </a>
+  </center>
 </body>
 </html>
